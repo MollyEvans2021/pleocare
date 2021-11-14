@@ -7,3 +7,6 @@ FROM tblusers INNER JOIN (tbl_active_shifts INNER JOIN tblBookedShifts ON tbl_ac
 
 #Earnings
 SELECT shiftID, salary*difference AS total_price from Eearnings
+
+#select month by name
+SELECT MONTHNAME(start) from tbl_active_shifts
