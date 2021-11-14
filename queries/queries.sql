@@ -10,3 +10,8 @@ SELECT shiftID, salary*difference AS total_price from Eearnings
 
 #select month by name
 SELECT MONTHNAME(start) from tbl_active_shifts
+
+#Monthly Earnings
+select sum(total_price) total_price, `MONTHNAME(start)`
+from month
+group by `MONTHNAME(start)`
